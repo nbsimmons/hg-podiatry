@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root{
+        --font-body-family: 'Roboto', sans-serif;
+        --primary-colour: #10A0A0;
+    }
+    html,
+    body {
+      font-family: var(--font-body-family);
+      line-height: var(--body-line-height);
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 16px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    p, ul{
+        margin-bottom: 15px;
+    }
+    p:last-child{
+        margin-bottom: 0;
+    }
+    a.button,
+    button.button{
+        padding: 10px 20px;
+        text-align: center;
+        background: white;
+        color: var(--primary-colour);
+        border-radius: 10px;
+        font-weight: bold;
+    }
+}
